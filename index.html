@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio | Miguel Oliveira</title>
+ 
+<style>
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #e2e8f0;
+  --accent: #38bdf8;
+}
+ 
+.light {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+}
+ 
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+ 
+/* HEADER */
+header {
+  padding: 60px;
+  text-align: center;
+  background: linear-gradient(120deg, var(--card), var(--bg));
+  transition: 0.4s;
+}
+ 
+/* BOTÃO */
+.toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+ 
+  background: var(--card);
+  color: var(--text);
+}
+ 
+/* Quando estiver no modo claro */
+body.light .toggle {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+ 
+body:not(.light) .toggle {
+  background: #ffffff;
+  color: #0f172a;
+}
+ 
+/* SEÇÕES */
+.section-title {
+  max-width: 1200px;
+  margin: 50px auto 10px;
+  padding: 0 20px;
+  font-size: 30px;
+}
+ 
+.section-title h2 {
+  border-left: 5px solid var(--accent);
+  padding-left: 10px;
+}
+ 
+/* SUBSEÇÃO (TECNOLOGIA) */
+.subsection-title {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  color: var(--accent);
+}
+ 
+/* GRID */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px 30px;
+}
+ 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+ 
+/* CARD */
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 14px;
+  transition: 0.3s;
+  opacity: 0;
+  transform: translateY(30px);
+}
+ 
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+ 
+.card:hover {
+  transform: scale(1.03);
+}
+ 
+.card h3 {
+  color: var(--accent);
+}
+ 
+/* PLACEHOLDER / IMAGEM */
+.placeholder {
+  border: 2px dashed #475569;
+  border-radius: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+ 
+.placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+ 
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #94a3b8;
+}
+</style>
+</head>
+ 
+<body>
+ 
+<button class="toggle" id="themeBtn" onclick="toggleMode()">🌙</button>
+ 
+<header>
+<h1>Miguel Oliveira</h1>
+<p>Power Platform | Automação | Dados</p>
+</header>
+ 
+<!-- ================= CONSTELLATION ================= -->
+<div class="section-title">
+<h2>Constellation (08/2024 - atual)</h2>
+</div>
+ 
+<!-- ===== POWER APPS / AUTOMATE ===== -->
+<div class="subsection-title">
+<h3>⚙️ Power Apps &amp; Power Automate</h3>
+</div>
+ 
+<div class="container">
+<div class="grid">
+ 
+    <!-- DUPLICAR ESTE BLOCO PARA NOVOS PROJETOS -->
+<div class="card">
+<h3>Vendor Performance App (VPA)</h3>
+<p>
+        Plataforma de gestão de fornecedores estruturada em 9 módulos,
+        cobrindo todo o ciclo: escopo, criticidade, avaliação e não conformidades.
+</p>
+<div class="placeholder">
+<img src="https://onedrive.live.com/personal/766BDF64B321323F/Documents/imagens_portfolio/VPA.jpg" alt="Imagem do projeto Vendor Performance App">
+</div>
+</div>
+ 
+    <div class="card">
+<h3>Gestão da Excelência Operacional (GEO)</h3>
+<p>
+        Apoio à auditoria PEO com navegação estruturada dos requisitos.
+</p>
+<div class="placeholder">
+<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="Imagem do projeto Gestão da Excelência Operacional">
+</div>
+</div>
+ 
+    <div class="card">
+<h3>AudApp</h3>
+<p>
+        Centraliza auditorias ANP, com timelines, evidências e rastreabilidade.
+</p>
+<div class="placeholder">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" alt="Imagem do projeto AudApp">
+</div>
+</div>
+ 
+    <div class="card">
+<h3>Automatizações (Power Automate)</h3>
+<p>
+        Mais de 15 fluxos automatizados, incluindo processos offshore 100% automáticos.
+</p>
+<div class="placeholder">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Imagem de automações com Power Automate">
+</div>
+</div>
+ 
+    <div class="card">
+<h3>Aplicativo VCP (Power Apps)</h3>
+<p>
+        App offline com geração automática de relatórios PDF.
+</p>
+<div class="placeholder">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="Imagem do aplicativo VCP">
+</div>
+</div>
+ 
+  </div>
+</div>
+ 
+<!-- ===== POWER BI ===== -->
+<div class="subsection-title">
+<h3>📊 Power BI</h3>
+</div>
+ 
+<div class="container">
+<div class="grid">
+ 
+    <!-- DUPLICAR PARA NOVOS DASHBOARDS -->
+<div class="card">
+<h3>Dashboards SGI &amp; Meio Ambiente</h3>
+<p>
+        Estruturação de dados e criação de dashboards estratégicos para tomada de decisão.
+</p>
+<div class="placeholder">
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Imagem de dashboards e análise de dados">
+</div>
+</div>
+ 
+  </div>
+</div>
+ 
+<footer>
+  © 2026 Miguel Oliveira
+</footer>
+ 
+<script>
+    // Estado inicial
+window.onload = () => {
+  const button = document.getElementById("themeBtn");
+ 
+  if (document.body.classList.contains("light")) {
+    button.textContent = "☀️";
+  } else {
+    button.textContent = "🌙";
+  }
+};
+// DARK MODE
+function toggleMode() {
+  const body = document.body;
+  const button = document.getElementById("themeBtn");
+ 
+  body.classList.toggle("light");
+ 
+  // Troca ícone
+  if (body.classList.contains("light")) {
+    button.textContent = "☀️";
+  } else {
+    button.textContent = "🌙";
+  }
+}
+ 
+// ANIMAÇÃO SCROLL
+const cards = document.querySelectorAll('.card');
+ 
+window.addEventListener('scroll', () => {
+  const trigger = window.innerHeight * 0.85;
+ 
+  cards.forEach(card => {
+    const top = card.getBoundingClientRect().top;
+ 
+    if (top < trigger) {
+      card.classList.add('show');
+    }
+  });
+});
+</script>
+ 
+</body>
+</html>
